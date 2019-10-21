@@ -15,6 +15,9 @@
 		590E4F0F235E1BED008FD030 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 590E4F0E235E1BED008FD030 /* Assets.xcassets */; };
 		590E4F12235E1BED008FD030 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 590E4F10235E1BED008FD030 /* LaunchScreen.storyboard */; };
 		84F95F38235E1D21005FB632 /* JerrySB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F95F37235E1D21005FB632 /* JerrySB.storyboard */; };
+		84F95F3A235E5A0E005FB632 /* ChoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F95F39235E5A0E005FB632 /* ChoreTableViewCell.swift */; };
+		84F95F3C235E5A32005FB632 /* ChoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F95F3B235E5A32005FB632 /* ChoreTableViewController.swift */; };
+		84F95F3E235E5A8F005FB632 /* ChoreDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F95F3D235E5A8F005FB632 /* ChoreDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		590E4F11235E1BED008FD030 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		590E4F13235E1BED008FD030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84F95F37235E1D21005FB632 /* JerrySB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JerrySB.storyboard; sourceTree = "<group>"; };
+		84F95F39235E5A0E005FB632 /* ChoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreTableViewCell.swift; sourceTree = "<group>"; };
+		84F95F3B235E5A32005FB632 /* ChoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreTableViewController.swift; sourceTree = "<group>"; };
+		84F95F3D235E5A8F005FB632 /* ChoreDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,9 @@
 				590E4F13235E1BED008FD030 /* Info.plist */,
 				590E4F0B235E1BEB008FD030 /* Home_Chore_Tracker.xcdatamodeld */,
 				84F95F37235E1D21005FB632 /* JerrySB.storyboard */,
+				84F95F3B235E5A32005FB632 /* ChoreTableViewController.swift */,
+				84F95F39235E5A0E005FB632 /* ChoreTableViewCell.swift */,
+				84F95F3D235E5A8F005FB632 /* ChoreDetailViewController.swift */,
 			);
 			path = "Home Chore Tracker";
 			sourceTree = "<group>";
@@ -147,8 +156,11 @@
 			files = (
 				590E4F07235E1BEB008FD030 /* ViewController.swift in Sources */,
 				590E4F03235E1BEB008FD030 /* AppDelegate.swift in Sources */,
+				84F95F3E235E5A8F005FB632 /* ChoreDetailViewController.swift in Sources */,
 				590E4F05235E1BEB008FD030 /* SceneDelegate.swift in Sources */,
+				84F95F3C235E5A32005FB632 /* ChoreTableViewController.swift in Sources */,
 				590E4F0D235E1BEB008FD030 /* Home_Chore_Tracker.xcdatamodeld in Sources */,
+				84F95F3A235E5A0E005FB632 /* ChoreTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,13 +10,13 @@
         <!--Item-->
         <scene sceneID="9sn-7q-yIX">
             <objects>
-                <tableViewController id="7LH-zE-h1h" sceneMemberID="viewController">
+                <tableViewController id="7LH-zE-h1h" customClass="ChoreTableViewController" customModule="Home_Chore_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="JaH-Vj-lDx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Rt8-F3-k8R">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Rt8-F3-k8R" customClass="ChoreTableViewCell" customModule="Home_Chore_Tracker" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rt8-F3-k8R" id="1Ku-J6-Ro1">
@@ -68,6 +68,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="choreImageView" destination="Pkg-Q6-WFu" id="d1v-I2-vUE"/>
+                                    <outlet property="choreNameLabel" destination="xnF-4h-9oA" id="aXT-ib-nWR"/>
+                                    <outlet property="pointsLabel" destination="08b-iU-wEi" id="WEC-C3-xlG"/>
                                     <segue destination="pqh-fH-tG9" kind="show" identifier="ShowChoreDetailSegue" id="hdA-Ba-7gX"/>
                                 </connections>
                             </tableViewCell>
@@ -86,7 +89,7 @@
         <!--Chore Name-->
         <scene sceneID="jbx-id-Urh">
             <objects>
-                <viewController id="aDs-U6-MuQ" sceneMemberID="viewController">
+                <viewController id="aDs-U6-MuQ" customClass="ChoreDetailViewController" customModule="Home_Chore_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Epw-mQ-qPH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -151,6 +154,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCu-xk-rPH">
                                 <rect key="frame" x="84" y="444.5" width="246" height="30"/>
                                 <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="doneButtonPressed:" destination="aDs-U6-MuQ" eventType="touchUpInside" id="JJj-kw-9be"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Cameron, Please wash all of your soccer jerserys by Saturday morning." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ETY-SI-bOM">
                                 <rect key="frame" x="87.5" y="558.5" width="239" height="130.5"/>
@@ -184,6 +190,12 @@
                     <navigationItem key="navigationItem" title="Chore Name" id="bCp-sm-hzF">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="ft3-JB-VIS"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="choreImageView" destination="6qF-jZ-wVn" id="LdW-Ik-8hU"/>
+                        <outlet property="completedChoreLabel" destination="BdQ-yd-Off" id="YWF-Iu-zr0"/>
+                        <outlet property="doneButton" destination="sCu-xk-rPH" id="WNf-Sd-29i"/>
+                        <outlet property="messageTextView" destination="ETY-SI-bOM" id="ytB-33-r7N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FcS-W4-cnl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

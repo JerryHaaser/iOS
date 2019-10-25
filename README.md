@@ -55,6 +55,13 @@ JSON
 
 ---
 
+## Icon/Artwork Credits
+[Eucalyp](https://www.flaticon.com/authors/eucalyp)<br/>
+[monkik](https://www.flaticon.com/authors/monkik)<br/>
+[Those Icons](https://www.flaticon.com/authors/those-icons)
+
+---
+
 ## Misc.
 
 This project was create by Lambda iOS Students to display knowledge of networking basics and core data. 
